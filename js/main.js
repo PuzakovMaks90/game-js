@@ -1,35 +1,11 @@
-/*let a = 5;
-let b = 7;
-
-console.log(a + ' > ' + b, a > b);*/
-
-/*"let player1 = 6;
-let player2 = 3;
-
-if ( player1 > player2) {
-    console.log('Победил игрок 1');
+let userValue = Number(prompt("Enter the number from 1 to 3. 1 is stone, 2 - scissors, 3 - paper"))
+let progValue = Math.ceil(Math.random() * 3)
+alert(`The programm number is ${progValue}`)
+if (userValue == 1 && progValue > 1 || userValue == 2 && progValue == 3) {
+    alert("Yeah! You won!")
+}
+else if (userValue == 3 && progValue < 3 || userValue == 2 && progValue == 1) {
+    alert("Sorry! You lost")
 } else {
-    console.log('Победил игрок 2');
-}*/
-
-/*let login = 'admin';
-let userLogin = prompt ('Введите логин');
-
-if (login == userLogin) {
-    alert(userLogin + ' Добро пожаловать !!!');
-} else {
-    alert('Пользователь с логином ' + userLogin + ' не найден');
-}*/
-
-let login = 'admin';
-let userLogin = prompt ('Введите логин');
-let password ='123';
-let userPassword = prompt ('Введите пароль');
-
-
-
-if (login == userLogin && password == userPassword) {
-    alert(userLogin + ' Добро пожаловать !!!');
-} else {
-    alert('Пользователь с логином ' + userLogin + ' не найден');
+    alert("The friendship won!")
 }
